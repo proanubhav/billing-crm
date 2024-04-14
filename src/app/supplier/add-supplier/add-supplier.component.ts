@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-supplier.component.scss']
 })
 export class AddSupplierComponent {
-
+  selectedTab = 1;
 }

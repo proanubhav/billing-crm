@@ -18,6 +18,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatTableModule} from '@angular/material/table';
 import { FormElementComponent } from './admin/form-element/form-element.component';
 import { ListingComponent } from './admin/listing/listing.component';
+import { SupplierRoutingModule } from './supplier/supplier-routing.module';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { ListingComponent } from './admin/listing/listing.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
+    SupplierRoutingModule,
     MatFormFieldModule,
     MatDialogModule,
     MatSelectModule,
