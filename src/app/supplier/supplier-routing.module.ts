@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { AddSupplierComponent } from './add-supplier/add-supplier.component';
+import { SharedModule } from '../admin/common/shared.module';
 
 const routes: Routes = [
   {

@@ -3,9 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './admin/common/header/header.component';
-import { FooterComponent } from './admin/common/footer/footer.component';
-import { SidebarComponent } from './admin/common/sidebar/sidebar.component';
+
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { SigninComponent } from './admin/signin/signin.component';
 import { SignupComponent } from './admin/signup/signup.component';
@@ -19,13 +17,15 @@ import {MatTableModule} from '@angular/material/table';
 import { FormElementComponent } from './admin/form-element/form-element.component';
 import { ListingComponent } from './admin/listing/listing.component';
 import { SupplierRoutingModule } from './supplier/supplier-routing.module';
+import { SharedModule } from './admin/common/shared.module';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent,
+    
+    
+    
     DashboardComponent,
     SigninComponent,
     SignupComponent,
@@ -43,6 +43,7 @@ import { SupplierRoutingModule } from './supplier/supplier-routing.module';
     MatInputModule,
     FormsModule,
     MatTableModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -54,7 +55,7 @@ import { SupplierRoutingModule } from './supplier/supplier-routing.module';
     MatInputModule,
     FormsModule,
     MatTableModule,
-    
+    SharedModule,
     BrowserAnimationsModule,
   ]
 })
