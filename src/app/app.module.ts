@@ -18,6 +18,7 @@ import { FormElementComponent } from './admin/form-element/form-element.componen
 import { ListingComponent } from './admin/listing/listing.component';
 import { SupplierRoutingModule } from './supplier/supplier-routing.module';
 import { SharedModule } from './admin/common/shared.module';
+import { ProductRoutingModule } from './product/product-routing.module';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { SharedModule } from './admin/common/shared.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     SupplierRoutingModule,
+    ProductRoutingModule,
     MatFormFieldModule,
     MatDialogModule,
     MatSelectModule,
