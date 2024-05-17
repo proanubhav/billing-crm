@@ -5,6 +5,7 @@ import { AddSupplierComponent } from './add-supplier/add-supplier.component';
 import { SharedModule } from '../admin/common/shared.module';
 import { GoodsReceiptNoteComponent } from './goods-receipt-note/goods-receipt-note.component';
 import { SupplierListComponent } from './supplier-list/supplier-list.component';
+import { SkuMasterComponent } from './sku-master/sku-master.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'supplier/supplier-list',
     component: SupplierListComponent
+  },
+  {  
+    path: 'supplier/sku-master',
+    component: SkuMasterComponent
   }
 
 ]
