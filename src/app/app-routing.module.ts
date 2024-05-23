@@ -5,6 +5,7 @@ import { SigninComponent } from './admin/signin/signin.component';
 import { SignupComponent } from './admin/signup/signup.component';
 import { ListingComponent } from './admin/listing/listing.component';
 import { NgModule } from '@angular/core';
+import { ReturnGoodsComponent } from './return-goods/return-goods.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
     path: 'listing',
     component: ListingComponent,
   },
+  {
+    path: 'return-goods',
+    component: ReturnGoodsComponent,
+  }
 
 ];
 

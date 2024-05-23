@@ -20,6 +20,7 @@ import { SupplierRoutingModule } from './supplier/supplier-routing.module';
 import { SharedModule } from './admin/common/shared.module';
 import { ProductRoutingModule } from './product/product-routing.module';
 import { BillingRoutingModule } from './billing/billing-routing.module';
+import { ReturnGoodsComponent } from './return-goods/return-goods.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { BillingRoutingModule } from './billing/billing-routing.module';
     SigninComponent,
     SignupComponent,
     FormElementComponent,
-    ListingComponent
+    ListingComponent,
+    ReturnGoodsComponent
   ],
   imports: [
     BrowserModule,
