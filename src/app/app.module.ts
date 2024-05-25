@@ -21,6 +21,9 @@ import { SharedModule } from './admin/common/shared.module';
 import { ProductRoutingModule } from './product/product-routing.module';
 import { BillingRoutingModule } from './billing/billing-routing.module';
 import { ReturnGoodsComponent } from './return-goods/return-goods.component';
+import { AddDiscountComponent } from './add-discount/add-discount.component';
+import { ShiftEndComponent } from './shift-end/shift-end.component';
+import { InventoryCheckComponent } from './admin/inventory-check/inventory-check.component';
 
 
 @NgModule({
@@ -34,7 +37,10 @@ import { ReturnGoodsComponent } from './return-goods/return-goods.component';
     SignupComponent,
     FormElementComponent,
     ListingComponent,
-    ReturnGoodsComponent
+    ReturnGoodsComponent,
+    AddDiscountComponent,
+    ShiftEndComponent,
+    InventoryCheckComponent
   ],
   imports: [
     BrowserModule,

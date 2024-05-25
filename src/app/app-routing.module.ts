@@ -6,6 +6,9 @@ import { SignupComponent } from './admin/signup/signup.component';
 import { ListingComponent } from './admin/listing/listing.component';
 import { NgModule } from '@angular/core';
 import { ReturnGoodsComponent } from './return-goods/return-goods.component';
+import { AddDiscountComponent } from './add-discount/add-discount.component';
+import { ShiftEndComponent } from './shift-end/shift-end.component';
+import { InventoryCheckComponent } from './admin/inventory-check/inventory-check.component';
 
 const routes: Routes = [
   {
@@ -27,6 +30,18 @@ const routes: Routes = [
   {
     path: 'return-goods',
     component: ReturnGoodsComponent,
+  },
+  {
+    path: 'add-discount',
+    component: AddDiscountComponent
+  },
+  {
+    path: 'shift-end',
+    component: ShiftEndComponent
+  },
+  {
+    path: 'admin/inventory-check',
+    component: InventoryCheckComponent
   }
 
 ];
