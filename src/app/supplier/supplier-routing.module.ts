@@ -1,39 +1,34 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { AddSupplierComponent } from './add-supplier/add-supplier.component';
-import { SharedModule } from '../admin/common/shared.module';
 import { GoodsReceiptNoteComponent } from './goods-receipt-note/goods-receipt-note.component';
 import { SupplierListComponent } from './supplier-list/supplier-list.component';
 import { SkuMasterComponent } from './sku-master/sku-master.component';
+import { AddSupplierComponent } from './add-supplier/add-supplier.component';
 
 const routes: Routes = [
   {
-    path: 'supplier/add-supplier',
+    path: 'add-supplier',
     component: AddSupplierComponent
   },
   {
-    path: 'supplier/goods-receipt-note',
+    path: 'goods-receipt-note',
     component: GoodsReceiptNoteComponent
   },
   {
-    path: 'supplier/supplier-list',
+    path: 'supplier-list',
     component: SupplierListComponent
   },
   {  
-    path: 'supplier/sku-master',
+    path: 'sku-master',
     component: SkuMasterComponent
   }
 
 ]
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [RouterModule]
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
 })
 export class SupplierRoutingModule {
   

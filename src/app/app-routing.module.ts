@@ -1,48 +1,36 @@
 
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './admin/dashboard/dashboard.component';
-import { SigninComponent } from './admin/signin/signin.component';
-import { SignupComponent } from './admin/signup/signup.component';
-import { ListingComponent } from './admin/listing/listing.component';
 import { NgModule } from '@angular/core';
-import { ReturnGoodsComponent } from './return-goods/return-goods.component';
-import { AddDiscountComponent } from './add-discount/add-discount.component';
-import { ShiftEndComponent } from './shift-end/shift-end.component';
-import { InventoryCheckComponent } from './admin/inventory-check/inventory-check.component';
 
 const routes: Routes = [
   {
-    path: 'dashboard',
-    component: DashboardComponent,
+    path: 'admin',
+    loadChildren: () =>
+      import('../app/admin/admin.module').then(
+        (m) => m.AdminModule
+      ),
   },
   {
-    path: 'signin',
-    component: SigninComponent,
+    path: 'product',
+    loadChildren: () =>
+      import('../app/product/product.module').then(
+        (m) => m.ProductModule
+      ),
   },
   {
-    path: 'signup',
-    component: SignupComponent,
+    path: 'supplier',
+    loadChildren: () =>
+      import('../app/supplier/supplier.module').then(
+        (m) => m.SupplierModule
+      ),
   },
   {
-    path: 'listing',
-    component: ListingComponent,
+    path: 'billing',
+    loadChildren: () =>
+      import('../app/billing/billing.module').then(
+        (m) => m.BillingModule
+      ),
   },
-  {
-    path: 'return-goods',
-    component: ReturnGoodsComponent,
-  },
-  {
-    path: 'add-discount',
-    component: AddDiscountComponent
-  },
-  {
-    path: 'shift-end',
-    component: ShiftEndComponent
-  },
-  {
-    path: 'admin/inventory-check',
-    component: InventoryCheckComponent
-  }
 
 ];
 

@@ -1,6 +1,6 @@
 <div class="page">
     <div class="page-main">
-        <!-- <app-sidebar></app-sidebar> -->
+        <!-- <app-header></app-header> -->
         <div class="app-content main-content mt-0">
             <div class="side-app">
                 <div class="main-container container-fluid">
@@ -11,14 +11,14 @@
                                 <div class="card-body mt-2">
                                     <div class="row">
                                         <ul class="nav nav-tabs">
-                                            <li class="nav-item">
+                                            <!-- <li class="nav-item">
                                                 <a class="nav-link" [ngClass]="activeTab === 'product-end' ? 'active' : ''"
                                                     (click)="toggleDiv('product-end')">Product Finished</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" [ngClass]="activeTab === 'product-near-end' ? 'active' : ''"
                                                     (click)="toggleDiv('product-near-end')">Product Near to Finished</a>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                         <div class="col-md-12 product-end" *ngIf="activeTab === 'product-end'">
                                             <div class="row">

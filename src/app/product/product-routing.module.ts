@@ -2,17 +2,26 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductCreateComponent } from './product-create/product-create.component';
 import { ProductListComponent } from './product-list/product-list.component';
-import { AddDiscountComponent } from '../add-discount/add-discount.component';
+import { AddDiscountComponent } from './add-discount/add-discount.component';
+import { ReturnGoodsComponent } from './return-goods/return-goods.component';
 
 const routes: Routes = [
   {
-    path: 'products/add-product',
+    path: 'add-product',
     component: ProductCreateComponent
   },
   {
-    path: 'products/product-list',
+    path: 'product-list',
     component: ProductListComponent
-  }
+  },
+  {
+    path: 'return-goods',
+    component: ReturnGoodsComponent,
+  },
+  {
+    path: 'add-discount',
+    component: AddDiscountComponent
+  },
 ]
 
 @NgModule({
