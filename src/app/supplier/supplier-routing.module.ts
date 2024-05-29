@@ -8,15 +8,15 @@ import { AddSupplierComponent } from './add-supplier/add-supplier.component';
 
 const routes: Routes = [
   {
-    path: 'add-supplier',
+    path: 'add',
     component: AddSupplierComponent
   },
   {
-    path: 'goods-receipt-note',
+    path: 'receipts',
     component: GoodsReceiptNoteComponent
   },
   {
-    path: 'supplier-list',
+    path: 'list',
     component: SupplierListComponent
   },
   {  

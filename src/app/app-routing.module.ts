@@ -31,6 +31,13 @@ const routes: Routes = [
         (m) => m.BillingModule
       ),
   },
+  {
+    path: '',
+    loadChildren: () =>
+      import('../app/auth/auth.module').then(
+        (m) => m.AuthModule
+      ),
+  },
 
 ];
 

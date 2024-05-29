@@ -7,19 +7,19 @@ import { ReturnGoodsComponent } from './return-goods/return-goods.component';
 
 const routes: Routes = [
   {
-    path: 'add-product',
+    path: 'add',
     component: ProductCreateComponent
   },
   {
-    path: 'product-list',
+    path: 'list',
     component: ProductListComponent
   },
   {
-    path: 'return-goods',
+    path: 'return',
     component: ReturnGoodsComponent,
   },
   {
-    path: 'add-discount',
+    path: 'discount',
     component: AddDiscountComponent
   },
 ]

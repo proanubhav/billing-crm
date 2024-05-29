@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { BillingRoutingModule } from './billing-routing.module';
 import { CreateBillingComponent } from './create-billing/create-billing.component';
 import { SharedModule } from '../shared/shared.module';
+import { ShiftEndComponent } from './shift-end/shift-end.component';
 
 
 @NgModule({
   declarations: [
-    CreateBillingComponent
+    CreateBillingComponent,
+    ShiftEndComponent
   ],
   imports: [
     CommonModule,
