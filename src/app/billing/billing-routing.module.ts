@@ -5,7 +5,7 @@ import { ShiftEndComponent } from './shift-end/shift-end.component';
 
 const routes: Routes = [
   {
-    path: 'create-billing',
+    path: 'create',
     component: CreateBillingComponent
   },
   {
